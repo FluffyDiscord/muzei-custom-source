@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Custom Muzei Source</string>
+    <string name="description">Have full control over your image feed</string>
+
+    <string name="fetchSettings_header">Fetch settings</string>
+
+    <string name="apiUrl">API endpoint</string>
+    <string name="apiUrl_summary">Using POST method</string>
+
+    <string name="requestRawJsonBody">Raw JSON object as body (Optional)</string>
+    <string name="requestRawJsonBody_summary">eg. `{"test":true, "limit": 2}`</string>
+
+    <string name="behaviorSettings_header">Download behavior</string>
+
+    <string name="onlyWifi">Only on Wifi</string>
+    <string name="requiresCharging">Only while charging</string>
+    <string name="batteryNotLow">Battery not low</string>
+
+    <string name="expectedResponse_header">Expected JSON response format</string>
+    <string name="note">
+        Extension sends HTTP POST request with included Json
+        as a body, but only if it\'s a valid Json, else it sends empty object `{}` and then replaces
+        current images with the new ones. Muzei can be a little
+        wonky at times, so after manual refresh, leave the source
+        page and go back in again, to show newly fetched images.
+    </string>
+    <string name="iconCredit">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </string>
+</resources>

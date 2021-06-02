@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/fetchSettings_header">
+
+        <EditTextPreference
+            app:key="apiUrl"
+            app:title="@string/apiUrl"
+            app:summary="@string/apiUrl_summary" />
+
+        <EditTextPreference
+            app:key="requestRawJsonBody"
+            app:title="@string/requestRawJsonBody"
+            app:summary="@string/requestRawJsonBody_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/behaviorSettings_header">
+
+        <SwitchPreferenceCompat
+            app:key="onlyWifi"
+            app:title="@string/onlyWifi" />
+
+        <SwitchPreferenceCompat
+            app:key="requiresCharging"
+            app:title="@string/requiresCharging" />
+
+        <SwitchPreferenceCompat
+            app:key="batteryNotLow"
+            app:title="@string/batteryNotLow" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/expectedResponse_header">
+        <Preference
+            app:key="_dummy"
+            app:persistent="false"
+            app:selectable="false"
+            app:summary="[\n
+    {\n
+        id: String\n
+        name: String\n
+        artist: String\n
+        url: String\n
+        downloadUrl: String\n
+    }\n
+]"/>
+    </PreferenceCategory>
+
+    <Preference
+        app:key="_dummy2"
+        app:persistent="false"
+        app:selectable="false"
+        app:summary="@string/note"/>
+    <Preference
+        app:key="_dummy3"
+        app:persistent="false"
+        app:selectable="false"
+        app:summary="@string/iconCredit"/>
+
+</PreferenceScreen>
